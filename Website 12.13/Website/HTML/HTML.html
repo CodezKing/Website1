@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="logo.png" alt="Gaming Logo">
+            </div>
+            
+            <!-- Search Bar and Cart -->
+            <div class="search-cart">
+                <input type="text" class="search-bar" placeholder="Search for games, consoles, etc...">
+                <img src="cart-icon.png" alt="Cart" class="cart-icon">
+            </div>
+
+            <!-- Login Section -->
+            <div class="login-signup">
+                <a href="login.html" class="login-link">Login</a>
+                <button class="join-btn">Join Us</button>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Upcoming Games</a></li>
+                <li><a href="#">Consoles and Gaming Peripherals</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Queries</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <!-- Burger Icon for mobile -->
+            <div class="burger" id="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <img src="logo.png" alt="Logo" class="logo-icon">
+        <div class="intro-text">Welcome to GameFury</div>
+        <img src="trend.png" alt="Trending" class="trending-icon">
+        <div class="intro-text">Trending Games</div>
+        <img src="devices.png" alt="devices" class="devices-icon">
+        <div class="intro-text">On any device</div>
+        <img src="multi-people.png" alt="multi-people" class="multi-people-icon">
+        <div class="intro-text">Play with friends</div>
+        <img src="price-tag.png" alt="price-tag" class="price-tag-icon">
+        <div class="intro-text">Low Price</div>
+    </div>
+
+    <script>
+        const burger = document.getElementById("burger");
+        const navbar = document.querySelector(".navbar-list");
+
+        burger.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
